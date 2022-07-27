@@ -45,8 +45,8 @@
 }
 
 .nav-menu:active {
-    background-color: #373737;
-    border: 1px solid #373737;
+    background-color: #616161;
+    border: 1px solid #616161;
 }
 
 .menu-svg {
@@ -149,14 +149,93 @@
     border-radius: 50%;
     margin-left: 8px;
     border: none;
+    transition: background-color .5s, border 2s;
 }
 
 .voice-recognition:hover .tooltipdiv {
     visibility: visible;
 }
 
+.voice-recognition:active {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+
 .voice-svg {
     margin-top: 3px;
     height: 27px;
     width:27px;
+}
+
+.account-info {
+    width: 225px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.create-video-button {
+    position: relative;
+    margin-right: 9px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color .5s, border 2s;
+}
+
+.create-video-button:hover .tooltipdiv {
+    visibility: visible;
+}
+
+.create-video-button:active {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+
+.video-svg {
+    height: 23px;
+    width: 28px;
+}
+
+.notification-button {
+    position: relative;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    transition: background-color .5s, border 2s;
+}
+
+.create-video-button:hover .tooltipdiv {
+    visibility: visible;
+}
+
+.create-video-button:active {
+    background-color: #616161;
+    border: 1px solid #616161;
+}
+
+.notification-svg {
+    height: 24px;
+    width: 24px;
+}
+
+.nav-channel-button {
+    margin-right: 45px;
+    height: 32px;
+    width: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.avatar-nav {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
 }
