@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -243,5 +247,92 @@
 .avatar-nav {
     height: 32px;
     width: 32px;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 56px);
+    background-color: #181818;
+}
+
+.bg-for-menu {
+    justify-self: end;
+    padding: 10px 5px;
+    width: 222px;
+    height: calc(100vh - 66px);
+    display: flex;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.side-menu-unfolded {
+    display: flex;
+    height: inherit;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    flex-direction: column;
+}
+
+.side-menu-unfolded::-webkit-scrollbar {
+    width: 10px;
+}
+
+.side-menu-unfolded::-webkit-scrollbar-track {
+    background-color: #212121;
+}
+
+.side-menu-unfolded:hover::-webkit-scrollbar-thumb {
+    background-color: #707070;
+    border-radius: 10px;
+}
+
+.side-menu-unfolded > a > button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    height: 40px;
+    width: 215px;
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.side-menu-unfolded > a:hover > button {
+    background-color: #646464;
+}
+
+.side-menu-unfolded > a:active > button {
+    background-color: #383838;
+}
+
+.side-menu-unfolded .active {
+    background-color: #383838;
+}
+
+.dash-between {
+    text-align: center;
+    color: #383838;
+    background-color: #212121;
+}
+
+.menu-header {
+    margin: 5px, 0;
+    font-family: 'Roboto', sans-serif;
+    color: #A19FA1;
+    background-color: #212121;
+}
+
+.sub-1, .sub-2 {
+    margin: 5px, 0;
+}
+
+.channel-avatar {
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
 }
