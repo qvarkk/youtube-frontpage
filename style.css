@@ -99,6 +99,7 @@
 }
 
 .search-button {
+    cursor: pointer;
     position: relative;
     height: 40px;
     width: 64px;
@@ -150,6 +151,7 @@
     margin-left: 8px;
     border: none;
     transition: background-color .5s, border 2s;
+    cursor: pointer;
 }
 
 .voice-recognition:hover .tooltipdiv {
@@ -184,6 +186,7 @@
     border: none;
     border-radius: 50%;
     transition: background-color .5s, border 2s;
+    cursor: pointer;
 }
 
 .create-video-button:hover .tooltipdiv {
@@ -209,13 +212,14 @@
     border: none;
     border-radius: 50%;
     transition: background-color .5s, border 2s;
+    cursor: pointer;
 }
 
-.create-video-button:hover .tooltipdiv {
+.notification-button:hover .tooltipdiv {
     visibility: visible;
 }
 
-.create-video-button:active {
+.notification-button:active {
     background-color: #616161;
     border: 1px solid #616161;
 }
@@ -225,6 +229,7 @@
     width: 24px;
 }
 
+
 .nav-channel-button {
     margin-right: 45px;
     height: 32px;
@@ -232,6 +237,7 @@
     border: none;
     border-radius: 50%;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .avatar-nav {
