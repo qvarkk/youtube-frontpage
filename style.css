@@ -1,338 +1,338 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-    --primary-color: #212121;
+  --primary-color: #212121;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100vw;
-    height: 56px;
-    background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 56px;
+  background-color: var(--primary-color);
 }
 
 .menu-and-logo-container {
-    width: 200px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .menu-and-logo-container > a {
-    margin-top: 4px;
+  margin-top: 4px;
 }
 
 .nav-menu {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color .5s ease-out, border .5s ease-out;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.5s ease-out, border 0.5s ease-out;
 }
 
 .nav-menu:active {
-    background-color: #616161;
-    border: 1px solid #616161;
+  background-color: #616161;
+  border: 1px solid #616161;
 }
 
 .menu-svg {
-    width: 27px;
-    height: 27px;
+  width: 27px;
+  height: 27px;
 }
 
 .search-box {
-    height: 100%;
-    width: 75%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-box-focus-element {
-    width: 40px;
-    padding: 7.5px 0 7.5px 15px;
-    background-color: #121212;
-    height: 40px;
-    border: 1px solid #1C62B9;
-    border-right: none;
+  width: 40px;
+  padding: 7.5px 0 7.5px 15px;
+  background-color: #121212;
+  height: 40px;
+  border: 1px solid #1c62b9;
+  border-right: none;
 }
 
 .transparent {
-    opacity: 0;
+  opacity: 0;
 }
 
 .focus-svg {
-    height: 25px;
-    width: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .search-bar {
-    height: 40px;
-    width: 38%;
-    padding: 3px;
-    background-color: #121212;
-    border: 1px solid #313131;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #888888;
+  height: 40px;
+  width: 38%;
+  padding: 3px;
+  background-color: #121212;
+  border: 1px solid #313131;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #888888;
 }
 
 .search-bar:focus {
-    outline: none;
-    border: 1px solid #1C62B9;
-    border-left: none;
+  outline: none;
+  border: 1px solid #1c62b9;
+  border-left: none;
 }
 
 .search-button {
-    cursor: pointer;
-    position: relative;
-    height: 40px;
-    width: 64px;
-    background-color: #313131;
-    border: none;
+  cursor: pointer;
+  position: relative;
+  height: 40px;
+  width: 64px;
+  background-color: #313131;
+  border: none;
 }
 
 .tooltipdiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 170%;
-    left: 50%;
-    margin-left: -20px;
-    visibility: hidden;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(92, 92, 92, 0.85);
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 170%;
+  left: 50%;
+  margin-left: -20px;
+  visibility: hidden;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(92, 92, 92, 0.85);
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
 
 .voice {
-    width: 80px;
-    margin-left: -40px;
+  width: 80px;
+  margin-left: -40px;
 }
 
 .search-button:hover .tooltipdiv {
-    visibility: visible;
+  visibility: visible;
 }
 
 .search-svg {
-    height: 23px;
-    width: 27px;
+  height: 23px;
+  width: 27px;
 }
 
 .voice-recognition {
-    position: relative;
-    width: 40px;
-    height: 40px; 
-    background-color: #121212;
-    border-radius: 50%;
-    margin-left: 8px;
-    border: none;
-    transition: background-color .5s, border 2s;
-    cursor: pointer;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #121212;
+  border-radius: 50%;
+  margin-left: 8px;
+  border: none;
+  transition: background-color 0.5s, border 2s;
+  cursor: pointer;
 }
 
 .voice-recognition:hover .tooltipdiv {
-    visibility: visible;
+  visibility: visible;
 }
 
 .voice-recognition:active {
-    background-color: #616161;
-    border: 1px solid #616161;
+  background-color: #616161;
+  border: 1px solid #616161;
 }
 
 .voice-svg {
-    margin-top: 3px;
-    height: 27px;
-    width:27px;
+  margin-top: 3px;
+  height: 27px;
+  width: 27px;
 }
 
 .account-info {
-    width: 225px;
-    height: 40px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  width: 225px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .create-video-button {
-    position: relative;
-    margin-right: 9px;
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    transition: background-color .5s, border 2s;
-    cursor: pointer;
+  position: relative;
+  margin-right: 9px;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.5s, border 2s;
+  cursor: pointer;
 }
 
 .create-video-button:hover .tooltipdiv {
-    visibility: visible;
+  visibility: visible;
 }
 
 .create-video-button:active {
-    background-color: #616161;
-    border: 1px solid #616161;
+  background-color: #616161;
+  border: 1px solid #616161;
 }
 
 .video-svg {
-    height: 23px;
-    width: 28px;
+  height: 23px;
+  width: 28px;
 }
 
 .notification-button {
-    position: relative;
-    margin-right: 20px;
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    border: none;
-    border-radius: 50%;
-    transition: background-color .5s, border 2s;
-    cursor: pointer;
+  position: relative;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.5s, border 2s;
+  cursor: pointer;
 }
 
 .notification-button:hover .tooltipdiv {
-    visibility: visible;
+  visibility: visible;
 }
 
 .notification-button:active {
-    background-color: #616161;
-    border: 1px solid #616161;
+  background-color: #616161;
+  border: 1px solid #616161;
 }
 
 .notification-svg {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
-
 .nav-channel-button {
-    margin-right: 45px;
-    height: 32px;
-    width: 32px;
-    border: none;
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
+  margin-right: 45px;
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .avatar-nav {
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
 }
 
 .main {
-    display: flex;
-    width: 100vw;
-    height: calc(100vh - 56px);
-    background-color: #181818;
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 56px);
+  background-color: #181818;
 }
 
 .bg-for-menu {
-    justify-self: end;
-    padding: 10px 5px;
-    width: 222px;
-    height: calc(100vh - 66px);
-    display: flex;
-    justify-content: center;
-    background-color: #212121;
+  justify-self: end;
+  padding: 10px 5px;
+  width: 222px;
+  height: calc(100vh - 66px);
+  display: flex;
+  justify-content: center;
+  background-color: #212121;
 }
 
 .side-menu-unfolded {
-    display: flex;
-    height: inherit;
-    overflow-x: hidden;
-    overflow-y: auto;
+  display: flex;
+  height: inherit;
+  overflow-x: hidden;
+  overflow-y: auto;
 
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .side-menu-unfolded::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 .side-menu-unfolded::-webkit-scrollbar-track {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 .side-menu-unfolded:hover::-webkit-scrollbar-thumb {
-    background-color: #707070;
-    border-radius: 10px;
+  background-color: #707070;
+  border-radius: 10px;
 }
 
 .side-menu-unfolded > a > button {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 15px;
-    height: 40px;
-    width: 215px;
-    background-color: #212121;
-    color: white;
-    font-size: 15px;
-    border: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  height: 40px;
+  width: 215px;
+  background-color: #212121;
+  color: white;
+  font-size: 15px;
+  border: none;
 }
 
 .side-menu-unfolded > a:hover > button {
-    background-color: #646464;
+  background-color: #646464;
 }
 
 .side-menu-unfolded > a:active > button {
-    background-color: #383838;
+  background-color: #383838;
 }
 
 .side-menu-unfolded .active {
-    background-color: #383838;
+  background-color: #383838;
 }
 
 .dash-between {
-    text-align: center;
-    color: #383838;
-    background-color: #212121;
+  text-align: center;
+  color: #383838;
+  background-color: #212121;
 }
 
 .menu-header {
-    margin: 5px, 0;
-    font-family: 'Roboto', sans-serif;
-    color: #A19FA1;
-    background-color: #212121;
+  margin: 5px, 0;
+  font-family: "Roboto", sans-serif;
+  color: #a19fa1;
+  background-color: #212121;
 }
 
-.sub-1, .sub-2 {
-    margin: 5px, 0;
+.sub-1,
+.sub-2 {
+  margin: 5px, 0;
 }
 
 .channel-avatar {
-    height: 24px;
-    width: 24px;
-    border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
 }
